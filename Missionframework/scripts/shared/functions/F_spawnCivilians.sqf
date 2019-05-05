@@ -13,10 +13,13 @@ if (_sector in sectors_bigtown) then {
 
 _nbcivs = _nbcivs * (sqrt (GRLIB_unitcap));
 
+// When spawning each civilian, call the "civFlee" function on it
 while {_idx < _nbcivs} do {
 	private _spawnpos = [(((_sectorpos select 0) + (75 * _spread)) - (random (150 * _spread))),(((_sectorpos select 1) + (75 * _spread)) - (random (150 * _spread))),0];
 	private _grp = createGroup [GRLIB_side_civilian, true];
-	(civilians select (floor (random (count civilians)))) createUnit [_spawnpos, _grp,"this addMPEventHandler [""MPKilled"", {_this spawn kill_manager}]"];
+	_civ = _grp createUnit [(civilians select (floor (random (count civilians)))), _spawnpos, [], 0, "NONE"];
+	_civ addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
+	[_civ] call civFlee;
 	private _nextciv = ((units _grp) select 0);
 	_createdcivs pushBack _nextciv;
 	[_grp] call add_civ_waypoints;
