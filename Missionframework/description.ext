@@ -7,11 +7,11 @@ enableDebugConsole = 1;
 allowFunctionsLog = 0;
 
 briefingName = $STR_MISSION_TITLE;
-overviewText = "www.killahpotatoes.de";
+overviewText = "Liberate the AO by any means necessary.";
 overviewPicture = "res\lib.paa";
-author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
+author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer, [TPO] Phantom";
 onLoadName = $STR_MISSION_TITLE;
-onLoadMission = "www.killahpotatoes.de";
+onLoadMission = "Liberate the AO by any means necessary.";
 loadScreen = "res\lib.paa";
 
 joinUnassigned = 1;
