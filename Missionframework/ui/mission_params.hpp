@@ -46,7 +46,7 @@ class Params
 		title = $STR_PARAMS_CIVILIANS;
 		values[] = {0,1,2,3};
 		texts[] = {$STR_PARAMS_CIVILIANS1,$STR_PARAMS_CIVILIANS2,$STR_PARAMS_CIVILIANS3,$STR_PARAMS_CIVILIANS4};
-		default = 2;
+		default = 3;
 	};
 	class FirstFob {
 		title = $STR_PARAMS_FIRSTFOB;
@@ -64,7 +64,7 @@ class Params
 		title = $STR_PARAM_SQUAD_SIZE;
 		values[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
 		texts[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
-		default = 12;
+		default = 4;
 	};
 	class BluforDefenders {
 		title = $STR_PARAM_BLUFOR_DEFENDERS;
@@ -124,31 +124,31 @@ class Params
 		title = $STR_A3_ReviveDuration;
 		values[] = {6,8,10,12,15,20,25,30};
 		texts[] = {6,8,10,12,15,20,25,30};
-		default = 6;
+		default = 20;
 	};
 	class ReviveRequiredTrait {
 		title = $STR_A3_RequiredTrait;
 		values[] = {0,1};
 		texts[] = {$STR_A3_None,$STR_A3_Medic};
-		default = 1;
+		default = 0;
 	};
 	class ReviveMedicSpeedMultiplier {
 		title = $STR_A3_RequiredTrait_MedicSpeedMultiplier;
 		values[] = {1,1.5,2,2.5,3};
 		texts[] = {"1x","1.5x","2x","2.5x","3x"};
-		default = 1;
+		default = 2;
 	};
 	class ReviveRequiredItems {
 		title = $STR_A3_RequiredItems;
 		values[] = {0,1,2};
 		texts[] = {$STR_A3_None,$STR_A3_Medikit,$STR_A3_FirstAidKitOrMedikit};
-		default = 1;
+		default = 2;
 	};
 	class UnconsciousStateMode {
 		title = $STR_A3_IncapacitationMode;
 		values[] = {0,1,2};
 		texts[] = {$STR_A3_Basic,$STR_A3_Advanced,$STR_A3_Realistic};
-		default = 0;
+		default = 2;
 	};
 	class ReviveBleedOutDuration {
 		title = $STR_A3_BleedOutDuration;
@@ -190,13 +190,13 @@ class Params
 		title = $STR_PARAMS_MAPMARKERS;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
-		default = 1;
+		default = 0;
 	};
 	class MobileRespawn {
 		title = $STR_PARAMS_MOBILERESPAWN;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
-		default = 1;
+		default = 0;
 	};
 	class RespawnCooldown {
 		title = $STR_PARAM_RESPAWN_COOLDOWN;
