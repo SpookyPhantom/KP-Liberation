@@ -62,14 +62,14 @@ opfor_vehicles = [
 	"OPTRE_M12A1_LRV_ins",										//BTR-K Kamysh
 	"OPTRE_M12A1_LRV_ins",										//BTR-K Kamysh
 	"OPTRE_M12A1_LRV_ins",										//BTR-K Kamysh
-	"OPTRE_M12R_AA_ins",											//ZSU-39 Tigris
+	"OPTRE_M12R_AA_ins"											//ZSU-39 Tigris
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
 	"OPTRE_M12_LRV_ins",													//Ifrit (HMG)
 	"OPTRE_M12_LRV_ins",													//Ifrit (HMG)
-	"OPTRE_M12A1_LRV_ins",										//BTR-K Kamysh
+	"OPTRE_M12A1_LRV_ins"										//BTR-K Kamysh
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
@@ -88,7 +88,7 @@ opfor_battlegroup_vehicles = [
 	"OPTRE_Pelican_armed_ins",
 	"OPTRE_Pelican_armed_ins",
 	"OPTRE_UNSC_hornet_ins",
-	"OPTRE_UNSC_hornet_ins",
+	"OPTRE_UNSC_hornet_ins"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
@@ -97,7 +97,7 @@ opfor_battlegroup_vehicles_low_intensity = [
 	"OPTRE_M12_FAV_APC",
 	"OPTRE_M12_FAV_APC",
 	"OPTRE_M12_FAV_ins",
-	"OPTRE_Pelican_unarmed_ins",
+	"OPTRE_Pelican_unarmed_ins"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
@@ -105,17 +105,17 @@ If something in this array can't hold all 8 soldiers then buggy behaviours may o
 opfor_troup_transports = [
 	"OPTRE_m1015_mule_ins",											//Tempest Transport
 	"OPTRE_Pelican_unarmed_ins",
-	"OPTRE_Pelican_armed_ins",
+	"OPTRE_Pelican_armed_ins"
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
 	"OPTRE_UNSC_hornet_ins",
 	"OPTRE_Pelican_unarmed_ins",
-	"OPTRE_Pelican_armed_ins",
+	"OPTRE_Pelican_armed_ins"
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-	"OPTRE_mako_drone_CAS_ins",
+	"OPTRE_mako_drone_CAS_ins"
 ];

@@ -1,8 +1,8 @@
 // Load in factions picked from the mission lobby
 //
 // This would normally be done with a "switch case" statement,
-// but IIRC that didn't work with parameters defined as adjustable
-// settings from the mission lobby
+// but sadly that doesn't work with parameters defined as adjustable
+// settings from the mission lobby ... why Brohemia?
 
 if (KP_liberation_preset_blufor == 0) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\Vanilla.sqf";};
 if (KP_liberation_preset_blufor == 1) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\Vanilla_Tanoa.sqf";};
@@ -28,6 +28,7 @@ if (KP_liberation_preset_opfor == 4) then {[] call compileFinal preprocessFileLi
 if (KP_liberation_preset_opfor == 5) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\Insurrectionists.sqf";};
 
 if (KP_liberation_preset_civilians == 0) then {[] call compileFinal preprocessFileLineNumbers "presets\civilians\Vanilla.sqf";};
+if (KP_liberation_preset_civilians == 1) then {[] call compileFinal preprocessFileLineNumbers "presets\civilians\UEG.sqf";};
 
 // Arsenal settings
 // 0 = Use the default blacklist method defined in kp_liberation_config.sqf

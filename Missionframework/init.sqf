@@ -32,32 +32,3 @@ if (!isDedicated && hasInterface) then {
 if ((isNil {player getVariable "bis_revive_ehHandleHeal"} || isDedicated) && !(bis_reviveParam_mode == 0)) then {
     [] call bis_fnc_reviveInit;
 };
-
-// Define the "civFlee functions
-// This is applied to civilians so they run like hell when
-// they hear gunshots
-// I can probably put this into a separate file later ...
-civFlee={_this select 0 addEventHandler["FiredNear", {
-	_civ = _this select 0;
-
-	//Remove the eventHandler to prevent spamming
-	_civ removeAllEventHandlers "FiredNear";
-	
-	switch( round(random 2) ) do {
-		case 0:{_civ switchMove "ApanPercMstpSnonWnonDnon_G01";  };
-		case 1:{_civ playMoveNow "ApanPknlMstpSnonWnonDnon_G01"; };
-		case 2:{_civ playMoveNow "ApanPpneMstpSnonWnonDnon_G01"; };
-		default{_civ playMoveNow "ApanPknlMstpSnonWnonDnon_G01"; };
-	};		
-	
-	_civ setSpeedMode "FULL";
-	(group _civ) setBehaviour "CARELESS";
-	_civ enableFatigue false;
-
-	_nH= nearestBuilding (getPos _civ);
-	
-	if (!isNil "_nH") then {	
-	_HP = _nH buildingPos - 1;//Finds list of all available building positions in the selected building		
-	_HP = selectRandom _HP;//Picks a building position from the list of building positions		
-	_civ doMove _HP;//Orders the civilian to move to the building position		
-	};}];

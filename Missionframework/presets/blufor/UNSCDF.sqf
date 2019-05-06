@@ -39,7 +39,7 @@ infantry_units = [
 	["OPTRE_UNSC_Marine_Soldier_Demolitions",30,0,0],	//Explosives Specialist
 	["OPTRE_UNSC_Marine_Soldier_Sniper",70,5,0],		//Sniper
 	["OPTRE_UNSC_Marine_Soldier_Crewman",10,0,0],		//Crewman
-	["OPTRE_UNSC_Airforce_Soldier_Airman",10,0,0],		//Helicopter Pilot
+	["OPTRE_UNSC_Airforce_Soldier_Airman",10,0,0]		//Helicopter Pilot
 ];
 
 light_vehicles = [
@@ -50,7 +50,7 @@ light_vehicles = [
 	["OPTRE_M12A1_LRV",75,60,50],										//Prowler (HMG)
 	["OPTRE_M12R_AA",75,60,50],										//Prowler (HMG)
 	["OPTRE_M12G1_LRV",75,80,50],										//Prowler (HMG)
-	["OPTRE_M813_TT",125,0,75],								//HEMTT Transport
+	["OPTRE_M813_TT",125,0,75]								//HEMTT Transport
 ];
 
 heavy_vehicles = [
@@ -58,7 +58,7 @@ heavy_vehicles = [
 	["OPTRE_M413_MGS_UNSC",300,75,125],							//AMV-7 Marshall
 	["OPTRE_M808B_UNSC",400,300,200],									//M2A1 Slammer
 	["OPTRE_M850_UNSC",500,350,225],									//M2A4 Slammer UP
-	["OPTRE_M313_UNSC",300,0,250],									//M2A4 Slammer UP
+	["OPTRE_M313_UNSC",300,0,250]									//M2A4 Slammer UP
 ];
 
 air_vehicles = [
@@ -68,7 +68,7 @@ air_vehicles = [
 	["OPTRE_UNSC_hornet_CAP",50,100,100],
 	["OPTRE_UNSC_hornet_CAS",50,100,100],
 	["OPTRE_UNSC_falcon",75,100,125],
-	["OPTRE_Pelican_armed",100,100,150],
+	["OPTRE_Pelican_armed",100,100,150]
 ];
 
 static_vehicles = [
@@ -189,7 +189,7 @@ blufor_squad_inf_light = [
 	"OPTRE_UNSC_Marine_Soldier_TeamLead",
 	"OPTRE_UNSC_Marine_Soldier_Rifleman_Light",
 	"OPTRE_UNSC_Marine_Soldier_Rifleman_AT",
-	"OPTRE_UNSC_Marine_Soldier_Corpsman",
+	"OPTRE_UNSC_Marine_Soldier_Corpsman"
 ];
 
 // Heavy infantry squad.
@@ -202,7 +202,7 @@ blufor_squad_inf = [
 	"OPTRE_UNSC_Marine_Soldier_Autorifleman",
 	"OPTRE_UNSC_Marine_Soldier_Autorifleman",
 	"OPTRE_UNSC_Marine_Soldier_Sniper",
-	"OPTRE_UNSC_Marine_Soldier_Engineer",
+	"OPTRE_UNSC_Marine_Soldier_Engineer"
 ];
 
 // AT specialists squad.
@@ -214,7 +214,7 @@ blufor_squad_at = [
 	"OPTRE_UNSC_Marine_Soldier_AT_Specialist",
 	"OPTRE_UNSC_Marine_Soldier_AT_Specialist",
 	"OPTRE_UNSC_Marine_Soldier_Corpsman",
-	"OPTRE_UNSC_Marine_Soldier_Rifleman_BR",
+	"OPTRE_UNSC_Marine_Soldier_Rifleman_BR"
 ];
 
 // AA specialists squad.
@@ -226,7 +226,7 @@ blufor_squad_aa = [
 	"OPTRE_UNSC_Marine_Soldier_AA_Specialist",
 	"OPTRE_UNSC_Marine_Soldier_AA_Specialist",
 	"OPTRE_UNSC_Marine_Soldier_Corpsman",
-	"OPTRE_UNSC_Marine_Soldier_Rifleman_BR",
+	"OPTRE_UNSC_Marine_Soldier_Rifleman_BR"
 ];
 
 // Force recon squad.
@@ -235,7 +235,7 @@ blufor_squad_recon = [
 	"OPTRE_FC_Spartan_Rifleman_AT",
 	"OPTRE_FC_Spartan_Automatic_Rifleman",
 	"OPTRE_FC_Spartan_Marksman",
-	"OPTRE_FC_Spartan_Marksman",
+	"OPTRE_FC_Spartan_Marksman"
 ];
 
 // Paratroopers squad.
@@ -246,7 +246,7 @@ blufor_squad_para = [
 	"OPTRE_UNSC_ODST_Soldier_Rifleman_AT",
 	"OPTRE_UNSC_ODST_Soldier_Paramedic",
 	"OPTRE_UNSC_ODST_Soldier_Marksman",
-	"OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman",
+	"OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman"
 ];
 
 // Elite vehicles that should be unlocked through military base capture.
@@ -257,5 +257,5 @@ elite_vehicles = [
 	"OPTRE_UNSC_hornet_CAP",
 	"OPTRE_UNSC_hornet_CAS",
 	"OPTRE_UNSC_falcon",
-	"OPTRE_Pelican_armed",
+	"OPTRE_Pelican_armed"
 ];

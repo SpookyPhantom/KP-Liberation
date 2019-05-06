@@ -1,8 +1,10 @@
 [] call compileFinal preprocessFileLineNumbers "scripts\client\misc\init_markers.sqf";
-switch (KP_liberation_arsenal) do {
-	case 5: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\optre.sqf";};
-	default {GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];};
-};
+
+// Do the arsenal switching here
+//
+// Does this actually work? It doesn't seem so ...
+if (KP_liberation_arsenal == 5) then {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\optre.sqf";};
+if (KP_liberation_arsenal != 5) then {GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];};
 
 if ( typeOf player == "VirtualSpectator_F" ) exitWith {
 	execVM "scripts\client\markers\empty_vehicles_marker.sqf";

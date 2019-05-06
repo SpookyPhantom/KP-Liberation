@@ -103,5 +103,5 @@ civilian_vehicles = [
 	"OPTRE_M12_CIV",
 	"OPTRE_Genet",
 	"OPTRE_forklift",
-	"OPCAN_RAKE_CIV",
+	"OPCAN_RAKE_CIV"
 ];
