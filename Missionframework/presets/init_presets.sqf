@@ -1,38 +1,40 @@
-switch (KP_liberation_preset_blufor) do {
-	case 1: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\apex.sqf";};
-	case 2: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\3cbBAF_mtp.sqf";};
-	case 3: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\3cbBAF_des.sqf";};
-	case 4: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\bwmod.sqf";};
-	case 5: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\bwmod_des.sqf";};
-	case 6: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_usaf_wdl.sqf";};
-	case 7: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_usaf_des.sqf";};
-	case 8: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_afrf.sqf";};
-	default {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
-};
+// Load in factions picked from the mission lobby
+//
+// This would normally be done with a "switch case" statement,
+// but sadly that doesn't work with parameters defined as adjustable
+// settings from the mission lobby ... why Brohemia?
 
-switch (KP_liberation_preset_opfor) do {
-	case 1: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\apex.sqf";};
-	case 2: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\rhs_afrf.sqf";};
-	case 3: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\takistan.sqf";};
-	case 4: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\islamic_state.sqf";};
-	case 5: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\SLA.sqf";};
-	default {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
-};
+if (KP_liberation_preset_blufor == 0) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\Vanilla.sqf";};
+if (KP_liberation_preset_blufor == 1) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\Vanilla_Tanoa.sqf";};
+if (KP_liberation_preset_blufor == 2) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\CDF.sqf";};
+if (KP_liberation_preset_blufor == 3) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\RHSUSAF_Army_D.sqf";};
+if (KP_liberation_preset_blufor == 4) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\RHSUSAF_Army_W.sqf";};
+if (KP_liberation_preset_blufor == 5) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\UNSCDF.sqf";};
 
-switch (KP_liberation_preset_resistance) do {
-	case 1: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\apex.sqf";};
-	case 2: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\rhs_gref.sqf";};
-	case 3: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\middle_eastern.sqf";};
-	case 4: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\RACS.sqf";};
-	default {[] call compileFinal preprocessFileLineNumbers "presets\resistance\custom.sqf";};
-};
+if (KP_liberation_preset_resistance == 0) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\Vanilla.sqf";};
+if (KP_liberation_preset_resistance == 1) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\Vanilla_Tanoa.sqf";};
+if (KP_liberation_preset_resistance == 2) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\ChDKZ.sqf";};
+if (KP_liberation_preset_resistance == 3) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\CDF.sqf";};
+if (KP_liberation_preset_resistance == 4) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\Nationalist.sqf";};
+if (KP_liberation_preset_resistance == 5) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\SAF_KOV.sqf";};
+if (KP_liberation_preset_resistance == 6) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\SAF_UN_Peacekeepers_Desert.sqf";};
+if (KP_liberation_preset_resistance == 7) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\SAF_UN_Peacekeepers_Digital.sqf";};
 
-switch (KP_liberation_preset_civilians) do {
-	case 1: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\apex.sqf";};
-	case 2: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\middle_eastern.sqf";};
-	case 3: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\RDSCiv.sqf";};
-	default {[] call compileFinal preprocessFileLineNumbers "presets\civilians\custom.sqf";};
-};
+if (KP_liberation_preset_opfor == 0) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\Vanilla.sqf";};
+if (KP_liberation_preset_opfor == 1) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\Vanilla_Tanoa.sqf";};
+if (KP_liberation_preset_opfor == 2) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\ChDKZ.sqf";};
+if (KP_liberation_preset_opfor == 3) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\RHSAFRF_VDV_EMR-Desert.sqf";};
+if (KP_liberation_preset_opfor == 4) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\RHSAFRF_VDV_EMR.sqf";};
+if (KP_liberation_preset_opfor == 5) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\Insurrectionists.sqf";};
+
+if (KP_liberation_preset_civilians == 0) then {[] call compileFinal preprocessFileLineNumbers "presets\civilians\Vanilla.sqf";};
+if (KP_liberation_preset_civilians == 1) then {[] call compileFinal preprocessFileLineNumbers "presets\civilians\UEG.sqf";};
+
+// Arsenal settings
+// 0 = Use the default blacklist method defined in kp_liberation_config.sqf
+// For anything else, see init_client.sqf
+KP_liberation_arsenal = 0;
+if (KP_liberation_preset_blufor == 5) then {KP_liberation_arsenal = 5;};
 
 // Prices for the blufor infantry squads (supplies, ammo, fuel)
 squads = [

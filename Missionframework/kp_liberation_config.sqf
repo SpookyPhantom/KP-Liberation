@@ -28,54 +28,9 @@ KP_liberation_ace_crates = [
 	"ACE_medicalSupplyCrate_advanced"
 ];
 
-/* - Custom unit and arsenal preset settings. 
-If you want to change a preset, it's recommended to set all four presets to 0 and edit the appropriate custom.sqf files in the preset folders.*/
-
-/* BLUFOR preset:
-0 = Custom (default vanilla with many optional mods supported)
-1 = Apex Tanoa (apex vanilla with many optional mods supported)
-2 = 3cb BAF (MTP)
-3 = 3cb BAF (Desert)
-4 = BWMod Bundeswehr (Flecktarn)
-5 = BWMod Bundeswehr (Tropentarn)
-6 = RHS USAF (Woodland)
-7 = RHS USAF (Desert)
-8 = RHS AFRF (VDV/MSV) */
-KP_liberation_preset_blufor = 0;
-
-/* OPFOR preset:
-0 = Custom (default vanilla CSAT)
-1 = Apex Tanoa (apex vanilla CSAT)
-2 = RHS AFRF (EMR/MSV)
-3 = Project OPFOR (Takistan)
-4 = Project OPFOR (Islamic State)
-5 = Project OPFOR (Sahrani) */
-KP_liberation_preset_opfor = 0;
-
-/* Resistance preset:
-0 = Custom (default vanilla FIA)
-1 = Apex Tanoa (apex vanilla Syndikat)
-2 = RHS GREF
-3 = Project OPFOR (Middle Eastern)
-4 = Project OPFOR (Sahrani) */
-KP_liberation_preset_resistance = 0;
-
-/* Civilians preset:
-0 = Custom (default vanilla)
-1 = Apex Tanoa (apex vanilla)
-2 = Project OPFOR (Middle Eastern)
-3 = RDS Civilians */
-KP_liberation_preset_civilians = 0;
-
-/* Which arsenal preset should be used?
-0 = Use the default blacklist method (defined below).
-1 = Custom arsenal preset (edit the custom.sqf in the arsenal_presets\ folder to change things for your own versions and tweaks).
-2 = Killah Potatoes Gaming Community arsenal preset.
-3 = RHS USAF arsenal preset.
-4 = RHS USAF arsenal preset with ACE.
-5 = RHS USAF arsenal preset with ACE and ACRE.	
-6 = 3cbBAF and RHS USAF arsenal preset. */
-KP_liberation_arsenal = 0;
+/* - Custom unit and arsenal preset settings.
+Units configurations are picked from the mission lobby (fetch_params.sqf)
+Arsenal preset and "picking the right configuration" (init_presets.sqf) */
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
@@ -99,7 +54,7 @@ GRLIB_color_friendly = "ColorBLUFOR";																			// Friendly sector marke
 GRLIB_color_enemy = "ColorOPFOR";																				// Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";																			// Enemy sector marker color (activated).
 
-GRLIB_fob_range = 125;																							// Build range around the main FOB building.
+GRLIB_fob_range = 500;																							// Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;																						// Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [15, 10, 8];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;																			// The percentage impact against enemy combat readiness for a successful FOB hunt.
@@ -148,7 +103,7 @@ KP_liberation_resistance_sector_chance = 35;																	// Chance that a gu
 KP_liberation_resistance_ambush_chance = 25;																	// Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
 
 /* - Default arsenal blacklist method.
-Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.	
+Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
 REMEMBER: All static turret and UAV bags should be defined here, to stop players from exploiting free resources via the virtual arsenal.	*/
 blacklisted_from_arsenal = [
 	"I_HMG_01_weapon_F",
@@ -349,6 +304,7 @@ box_transport_config = [
 	["UK3CB_BAF_Merlin_HC4_32_Arctic", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
 	["UK3CB_BAF_Merlin_HC4_CSAR_Arctic", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
 	["O_Truck_03_transport_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
+	["OPTRE_m1015_mule_ins", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
 	["BW_LKW7T_Trans_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
 	["O_Truck_03_covered_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
 	["O_T_Truck_03_transport_ghex_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],

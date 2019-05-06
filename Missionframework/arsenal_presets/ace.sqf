@@ -1,0 +1,107 @@
+// This give you all the "ACE" items you'd likely want
+// when starting new templates.
+//
+// Not meant to be used standalone.
+
+// Mods needed:
+// ACE
+
+GRLIB_arsenal_weapons = [
+	"ACE_VMH3",
+	"ACE_VMM3",
+	"MineDetector",
+	"lerca_1200_black",
+	"lerca_1200_tan",
+	"Leupold_Mk4",
+];
+
+GRLIB_arsenal_magazines = [
+
+];
+
+GRLIB_arsenal_items = [
+	"ACE_ATragMX",
+	"ACE_Altimeter",
+	"ACE_CableTie",
+	"ACE_Cellphone",
+	"ACE_Clacker",
+	"ACE_DAGR",
+	"ACE_DeadManSwitch",
+	"ACE_DefusalKit",
+	"ACE_EarPlugs",
+	"ACE_EntrenchingTool",
+	"ACE_Flashlight_KSF1",
+	"ACE_Flashlight_MX991",
+	"ACE_Flashlight_XL50",
+	"ACE_HuntIR_monitor",
+	"ACE_IR_Strobe_Item",
+	"ACE_Kestrel4500",
+	"ACE_M26_Clacker",
+	"ACE_MX2A",
+	"ACE_MapTools",
+	"ACE_NVG_Wide",
+	"ACE_RangeCard",
+	"ACE_RangeTable_82mm",
+	"ACE_Sandbag_empty",
+	"ACE_SpottingScope",
+	"ACE_SpraypaintBlack",
+	"ACE_SpraypaintBlue",
+	"ACE_SpraypaintGreen",
+	"ACE_SpraypaintRed",
+	"ACE_Tripod",
+	"ACE_UAVBattery",
+	"ACE_Vector",
+	"ACE_VectorDay",
+	"ACE_Yardage450",
+	"ACE_adenosine",
+	"ACE_atropine",
+	"ACE_bloodIV",
+	"ACE_bloodIV_250",
+	"ACE_bloodIV_500",
+	"ACE_bodyBag",
+	"ACE_elasticBandage",
+	"ACE_epinephrine",
+	"ACE_fieldDressing",
+	"ACE_microDAGR",
+	"ACE_morphine",
+	"ACE_muzzle_mzls_338",
+	"ACE_muzzle_mzls_93mmg",
+	"ACE_muzzle_mzls_B",
+	"ACE_muzzle_mzls_H",
+	"ACE_muzzle_mzls_L",
+	"ACE_muzzle_mzls_smg_01",
+	"ACE_muzzle_mzls_smg_02",
+	"ACE_optic_Hamr_PIP",
+	"ACE_packingBandage",
+	"ACE_personalAidKit",
+	"ACE_plasmaIV",
+	"ACE_plasmaIV_250",
+	"ACE_plasmaIV_500",
+	"ACE_quikclot",
+	"ACE_salineIV",
+	"ACE_salineIV_250",
+	"ACE_salineIV_500",
+	"ACE_surgicalKit",
+	"ACE_tourniquet",
+	"ACE_wirecutter",
+	"B_UavTerminal",
+	"Binocular",
+	"ItemCompass",
+	"ItemGPS",
+	"ItemMap",
+	"ItemWatch",
+	"Laserdesignator",
+	"NVGoggles",
+	"NVGoggles_INDEP",
+	"NVGoggles_OPFOR",
+	"Rangefinder",
+	"ToolKit",
+];
+
+GRLIB_arsenal_backpacks = [
+	"ACE_NonSteerableParachute",
+	"ACE_TacticalLadder_Pack",
+	"ace_gunbag",
+	"ace_gunbag_Tan",
+	"B_Parachute",
+];

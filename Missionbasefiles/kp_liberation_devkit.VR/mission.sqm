@@ -127,7 +127,7 @@ class Mission
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="LeadTrack01_F";
+				effectMusic="LeadTrack01_F_Orange";
 			};
 			id=1;
 			type="EmptyDetector";

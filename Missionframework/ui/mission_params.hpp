@@ -4,7 +4,7 @@ class Params
 		title = $STR_PARAMS_LOADSAVEPARAMS;
 		values[] = { 0, 1, 2 };
 		texts[] = { $STR_PARAMS_LOADSAVEPARAMS_SAVE, $STR_PARAMS_LOADSAVEPARAMS_LOAD, $STR_PARAMS_LOADSAVEPARAMS_SELECTED };
-		default = 1;
+		default = 2;
 	};
 	class Spacer0 {
 		title = "";
@@ -18,17 +18,41 @@ class Params
 		texts[] = { "" };
 		default = "";
 	};
+	class Template_BLUFOR {
+		title = "BLUFOR Faction";
+		values[] = {0,1,2,3,4,5};
+		texts[] = {"NATO", "NATO (Tanoa)", "Chernorussian Defence Forces", "United States Armed Forces (Arid)", "United States Armed Forces (Woodland)", "UNSCDF"};
+		default = 5;
+	};
+	class Template_INDFOR {
+		title = "Independent Faction";
+		values[] = {0,1,2,3,4,5,6,7};
+		texts[] = {"FIA", "Syndikat", "ChDKZ Insurgents", "Chernorussian Defence Forces", "Nationalist Forces", "Serbian Armed Forces", "UN Peacekeepers (Desert)", "UN Peacekeepers (Woodland)"};
+		default = 0;
+	};
+	class Template_OPFOR {
+		title = "OPFOR Faction";
+		values[] = {0,1,2,3,4,5};
+		texts[] = {"CSAT", "CSAT (Tanoa)", "ChDKZ Insurgents", "Russian Armed Forces (Desert)", "Russian Armed Forces (Woodland)", "Insurrectionists"};
+		default = 5;
+	};
+	class Template_CIV {
+		title = "Civilian Faction";
+		values[] = {0,1};
+		texts[] = {"Vanilla", "UEG"};
+		default = 1;
+	};
 	class Unitcap {
 		title = $STR_PARAMS_UNITCAP;
 		values[] = {0,1,2,3,4,5};
 		texts[] = {$STR_PARAMS_UNITCAP1,$STR_PARAMS_UNITCAP2,$STR_PARAMS_UNITCAP3,$STR_PARAMS_UNITCAP4,$STR_PARAMS_UNITCAP5,$STR_PARAMS_UNITCAP6};
-		default = 2;
+		default = 1;
 	};
 	class Difficulty {
 		title = $STR_PARAMS_DIFFICULTY;
 		values[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
 		texts[] = { $STR_PARAMS_DIFFICULTY1, $STR_PARAMS_DIFFICULTY2, $STR_PARAMS_DIFFICULTY3, $STR_PARAMS_DIFFICULTY4, $STR_PARAMS_DIFFICULTY5, $STR_PARAMS_DIFFICULTY6, $STR_PARAMS_DIFFICULTY7, $STR_PARAMS_DIFFICULTY8 };
-		default = 2;
+		default = 3;
 	};
 	class Aggressivity {
 		title = $STR_AGGRESSIVITY_PARAM;
@@ -46,7 +70,7 @@ class Params
 		title = $STR_PARAMS_CIVILIANS;
 		values[] = {0,1,2,3};
 		texts[] = {$STR_PARAMS_CIVILIANS1,$STR_PARAMS_CIVILIANS2,$STR_PARAMS_CIVILIANS3,$STR_PARAMS_CIVILIANS4};
-		default = 2;
+		default = 3;
 	};
 	class FirstFob {
 		title = $STR_PARAMS_FIRSTFOB;
@@ -64,7 +88,7 @@ class Params
 		title = $STR_PARAM_SQUAD_SIZE;
 		values[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
 		texts[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
-		default = 12;
+		default = 4;
 	};
 	class BluforDefenders {
 		title = $STR_PARAM_BLUFOR_DEFENDERS;
@@ -124,31 +148,31 @@ class Params
 		title = $STR_A3_ReviveDuration;
 		values[] = {6,8,10,12,15,20,25,30};
 		texts[] = {6,8,10,12,15,20,25,30};
-		default = 6;
+		default = 20;
 	};
 	class ReviveRequiredTrait {
 		title = $STR_A3_RequiredTrait;
 		values[] = {0,1};
 		texts[] = {$STR_A3_None,$STR_A3_Medic};
-		default = 1;
+		default = 0;
 	};
 	class ReviveMedicSpeedMultiplier {
 		title = $STR_A3_RequiredTrait_MedicSpeedMultiplier;
 		values[] = {1,1.5,2,2.5,3};
 		texts[] = {"1x","1.5x","2x","2.5x","3x"};
-		default = 1;
+		default = 2;
 	};
 	class ReviveRequiredItems {
 		title = $STR_A3_RequiredItems;
 		values[] = {0,1,2};
 		texts[] = {$STR_A3_None,$STR_A3_Medikit,$STR_A3_FirstAidKitOrMedikit};
-		default = 1;
+		default = 2;
 	};
 	class UnconsciousStateMode {
 		title = $STR_A3_IncapacitationMode;
 		values[] = {0,1,2};
 		texts[] = {$STR_A3_Basic,$STR_A3_Advanced,$STR_A3_Realistic};
-		default = 0;
+		default = 2;
 	};
 	class ReviveBleedOutDuration {
 		title = $STR_A3_BleedOutDuration;
@@ -190,13 +214,13 @@ class Params
 		title = $STR_PARAMS_MAPMARKERS;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
-		default = 1;
+		default = 0;
 	};
 	class MobileRespawn {
 		title = $STR_PARAMS_MOBILERESPAWN;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
-		default = 1;
+		default = 0;
 	};
 	class RespawnCooldown {
 		title = $STR_PARAM_RESPAWN_COOLDOWN;
@@ -274,7 +298,7 @@ class Params
 		title = $STR_PARAMS_DEPLOYMENTCAMERA;
 		values[] = { 1, 0 };
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class Whitelist {
 		title = $STR_WHITELIST_PARAM;
@@ -282,12 +306,12 @@ class Params
 		texts[] = { $STR_WHITELIST_ENABLED, $STR_PARAMS_DISABLED };
 		default = 0;
 	};
-	class ServerRestart {
-		title = $STR_RESTART_PARAM;
-		values[] = {0,1,2,3,4,5,6};
-		texts[] = {$STR_PARAMS_DISABLED,"1","2","3","4","5","6"};
-		default = 0;
-	};
+//	class ServerRestart {
+//		title = $STR_RESTART_PARAM;
+//		values[] = {0,1,2,3,4,5,6};
+//		texts[] = {$STR_PARAMS_DISABLED,"1","2","3","4","5","6"};
+//		default = 0;
+//	};
 	class WipeSave1 {
 		title = $STR_WIPE_TITLE;
 		values[] = {0,1};

@@ -135,7 +135,7 @@ class AddonsMetaData
 randomSeed=8273028;
 class ScenarioData
 {
-	author="[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
+	author="[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer, [TPO] Phantom";
 	respawnDialog=0;
 	disabledAI=1;
 	respawn=3;
@@ -342,7 +342,7 @@ class Mission
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="LeadTrack01_F";
+				effectMusic="LeadTrack01_F_Orange";
 			};
 			id=11;
 			type="EmptyDetector";

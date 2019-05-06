@@ -14,6 +14,10 @@ KP_liberation_logistic_debug = ["DebugLogistic",0] call bis_fnc_getParamValue;
 KP_liberation_sectorspawn_debug = ["DebugSectorSpawn",0] call bis_fnc_getParamValue;
 KP_liberation_kill_debug = ["DebugKill",0] call bis_fnc_getParamValue;
 KP_liberation_production_debug = ["DebugProduction",0] call bis_fnc_getParamValue;
+KP_liberation_preset_blufor = ["Template_BLUFOR", 0] call bis_fnc_getParamValue;
+KP_liberation_preset_resistance = ["Template_INDFOR", 0] call bis_fnc_getParamValue;
+KP_liberation_preset_opfor = ["Template_OPFOR", 0] call bis_fnc_getParamValue;
+KP_liberation_preset_civilians = ["Template_CIV", 0] call bis_fnc_getParamValue;
 
 KP_load_params = ["LoadSaveParams", 1] call BIS_fnc_getParamValue;
 
