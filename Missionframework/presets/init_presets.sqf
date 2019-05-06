@@ -9,6 +9,7 @@ if (KP_liberation_preset_blufor == 1) then {[] call compileFinal preprocessFileL
 if (KP_liberation_preset_blufor == 2) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\CDF.sqf";};
 if (KP_liberation_preset_blufor == 3) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\RHSUSAF_Army_D.sqf";};
 if (KP_liberation_preset_blufor == 4) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\RHSUSAF_Army_W.sqf";};
+if (KP_liberation_preset_blufor == 5) then {[] call compileFinal preprocessFileLineNumbers "presets\blufor\optre.sqf";};
 
 if (KP_liberation_preset_resistance == 0) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\Vanilla.sqf";};
 if (KP_liberation_preset_resistance == 1) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\Vanilla_Tanoa.sqf";};
@@ -18,14 +19,22 @@ if (KP_liberation_preset_resistance == 4) then {[] call compileFinal preprocessF
 if (KP_liberation_preset_resistance == 5) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\SAF_KOV.sqf";};
 if (KP_liberation_preset_resistance == 6) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\SAF_UN_Peacekeepers_Desert.sqf";};
 if (KP_liberation_preset_resistance == 7) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\SAF_UN_Peacekeepers_Digital.sqf";};
+if (KP_liberation_preset_resistance == 8) then {[] call compileFinal preprocessFileLineNumbers "presets\resistance\optre.sqf";};
 
 if (KP_liberation_preset_opfor == 0) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\Vanilla.sqf";};
 if (KP_liberation_preset_opfor == 1) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\Vanilla_Tanoa.sqf";};
 if (KP_liberation_preset_opfor == 2) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\ChDKZ.sqf";};
 if (KP_liberation_preset_opfor == 3) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\RHSAFRF_VDV_EMR-Desert.sqf";};
 if (KP_liberation_preset_opfor == 4) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\RHSAFRF_VDV_EMR.sqf";};
+if (KP_liberation_preset_opfor == 6) then {[] call compileFinal preprocessFileLineNumbers "presets\opfor\optre.sqf";};
 
 if (KP_liberation_preset_civilians == 0) then {[] call compileFinal preprocessFileLineNumbers "presets\civilians\Vanilla.sqf";};
+
+// Arsenal settings
+// 0 = Use the default blacklist method defined in kp_liberation_config.sqf
+// For anything else, see init_client.sqf
+KP_liberation_arsenal = 0;
+if (KP_liberation_preset_blufor == 5) then {KP_liberation_arsenal = 5;};
 
 // Prices for the blufor infantry squads (supplies, ammo, fuel)
 squads = [

@@ -32,16 +32,6 @@ KP_liberation_ace_crates = [
 Units configurations are picked from the mission lobby (fetch_params.sqf)
 Arsenal preset and "picking the right configuration" (init_presets.sqf) */
 
-/* Which arsenal preset should be used?
-0 = Use the default blacklist method (defined below).
-1 = Custom arsenal preset (edit the custom.sqf in the arsenal_presets\ folder to change things for your own versions and tweaks).
-2 = Killah Potatoes Gaming Community arsenal preset.
-3 = RHS USAF arsenal preset.
-4 = RHS USAF arsenal preset with ACE.
-5 = RHS USAF arsenal preset with ACE and ACRE.
-6 = 3cbBAF and RHS USAF arsenal preset. */
-KP_liberation_arsenal = 0;
-
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
 KP_liberation_fuel_neutral = 180;
