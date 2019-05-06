@@ -45,7 +45,7 @@ GRLIB_arsenal_weapons = [
 	"OPTRE_M41_SSR",
 	"OPTRE_M41_SSR_G",
 	"OPTRE_M6G",
-	"OPTRE_M6C",
+	"OPTRE_M6C"
 ];
 
 GRLIB_arsenal_magazines = [
@@ -184,7 +184,7 @@ GRLIB_arsenal_items = [
 	"OPTRE_M45_Flashlight",
 	"OPTRE_M45_Flashlight_red",
 	"OPTRE_M6G_Flashlight",
-	"OPTRE_M6C_Laser",
+	"OPTRE_M6C_Laser"
 ];
 
 GRLIB_arsenal_backpacks = [
@@ -229,5 +229,5 @@ GRLIB_arsenal_backpacks = [
 	"OPTRE_UNSC_Rucksack_Lead",
 	"OPTRE_UNSC_Rucksack_M41",
 	"OPTRE_UNSC_Rucksack_Medic",
-	"OPTRE_UNSC_Rucksack_Medic_Filled",
+	"OPTRE_UNSC_Rucksack_Medic_Filled"
 ];
