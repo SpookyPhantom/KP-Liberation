@@ -348,7 +348,7 @@ class Mission
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="LeadTrack01_F_Orange";
+				effectMusic="OPTRE_Music_OPTRETheme";
 			};
 			id=11;
 			type="EmptyDetector";
