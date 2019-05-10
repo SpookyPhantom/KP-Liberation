@@ -5,9 +5,6 @@
 // Does this actually work? It doesn't seem so ...
 if (KP_liberation_arsenal == 5) then {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\optre.sqf";};
 if (KP_liberation_arsenal != 5) then {GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];};
-	case 7: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\gm_west.sqf";};
-	case 8: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\gm_east.sqf";};
-	case 9: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\csat.sqf";};
 
 if ( typeOf player == "VirtualSpectator_F" ) exitWith {
 	execVM "scripts\client\markers\empty_vehicles_marker.sqf";
