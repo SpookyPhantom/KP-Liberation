@@ -42,23 +42,31 @@ if ( dojump > 0 ) then {
 	cutRsc ["fasttravel", "PLAIN", 1];
 	playSound "parasound";
 	sleep 2;
-	_backpack = backpack player;
-	if ( _backpack != "" && _backpack != "B_Parachute" ) then {
-		_backpackcontents = backpackItems player;
-		removeBackpack player;
-		sleep 0.1;
-	};
-	player addBackpack "B_Parachute";
 
-	player setpos halo_position;
+	// If using OPTRE, put the player in a drop pod instead of free falling
+	if (isClass (configfile >> "CfgPatches" >> "OPTRE_Core")) then {
+		_veh = createVehicle ["OPTRE_HEV", halo_position];
+		player moveInAny _veh;}
+	else {_backpack = backpack player;
+		if ( _backpack != "" && _backpack != "B_Parachute" ) then {
+			_backpackcontents = backpackItems player;
+			removeBackpack player;
+			sleep 0.1;
+		};
+		
+		player addBackpack "B_Parachute";
+		
+		player setpos halo_position;
+		
+		sleep 4;
+	
+		waitUntil { !alive player || isTouchingGround player };
+		if ( _backpack != "" && _backpack != "B_Parachute" ) then {
+			sleep 2;
+			player addBackpack _backpack;
+			clearAllItemsFromBackpack player;
+			{ player addItemToBackpack _x } foreach _backpackcontents;
+		};};
 
-	sleep 4;
 	halojumping = false;
-	waitUntil { !alive player || isTouchingGround player };
-	if ( _backpack != "" && _backpack != "B_Parachute" ) then {
-		sleep 2;
-		player addBackpack _backpack;
-		clearAllItemsFromBackpack player;
-		{ player addItemToBackpack _x } foreach _backpackcontents;
-	};
 };
