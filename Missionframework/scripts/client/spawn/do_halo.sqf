@@ -40,14 +40,26 @@ if ( dojump > 0 ) then {
 	halojumping = true;
 	sleep 0.1;
 	cutRsc ["fasttravel", "PLAIN", 1];
-	playSound "parasound";
 	sleep 2;
 
 	// If using OPTRE, put the player in a drop pod instead of free falling
 	if (isClass (configfile >> "CfgPatches" >> "OPTRE_Core")) then {
-		_veh = createVehicle ["OPTRE_HEV", halo_position];
-		player moveInAny _veh;}
-	else {_backpack = backpack player;
+		// OPTRE_Fnc_HEV not well documented ...
+		// NOTE: 30 represents launchDelay, but nothing else works
+		// Seems to be hardcoded that way for multiplayer in HEV/Fn_HEV.sqf
+		_launchDelay = 30; // Takes about a second for everything to sit right
+		[halo_position, [player], "Frigate Lowering Arm", _launchDelay, 0.25, -1, 2, 8000, 5000, 2000, 1000, 750, 200, true, true, 300] spawn OPTRE_Fnc_HEV;
+		hint "Performing Launch BIT: 30 seconds";
+		playMusic ["OPTRE_Music_TimeToMove", 0];
+		sleep 32;
+		playMusic "";
+		playMusic ["OPTRE_Music_MissionGo", 8];
+		sleep 34; // Track done at 42 s
+		playMusic "";
+	}
+	else {
+		playSound "parasound";
+		_backpack = backpack player;
 		if ( _backpack != "" && _backpack != "B_Parachute" ) then {
 			_backpackcontents = backpackItems player;
 			removeBackpack player;
@@ -66,7 +78,8 @@ if ( dojump > 0 ) then {
 			player addBackpack _backpack;
 			clearAllItemsFromBackpack player;
 			{ player addItemToBackpack _x } foreach _backpackcontents;
-		};};
+		};
+	};
 
 	halojumping = false;
 };
