@@ -56,6 +56,13 @@ if ( dojump > 0 ) then {
 		playMusic ["OPTRE_Music_MissionGo", 8];
 		sleep 34; // Track done at 42 s
 		playMusic "";
+		
+		// Sometimes players are invincible, and I suspect this is due to
+		// using the drop pod function. Force allowDamage after the player
+		// has touched down (or died, for whatever reason)
+		waitUntil { !alive player || isNull objectParent player };
+		sleep 1;
+		player allowDamage true;
 	}
 	else {
 		playSound "parasound";
