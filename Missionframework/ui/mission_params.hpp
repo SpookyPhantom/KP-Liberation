@@ -22,25 +22,25 @@ class Params
 		title = "BLUFOR Faction";
 		values[] = {0,1,2,3,4,5};
 		texts[] = {"NATO", "NATO (Tanoa)", "Chernorussian Defence Forces", "United States Armed Forces (Arid)", "United States Armed Forces (Woodland)", "UNSCDF"};
-		default = 5;
+		default = 4;
 	};
 	class Template_INDFOR {
 		title = "Independent Faction";
 		values[] = {0,1,2,3,4,5,6,7};
 		texts[] = {"FIA", "Syndikat", "ChDKZ Insurgents", "Chernorussian Defence Forces", "Nationalist Forces", "Serbian Armed Forces", "UN Peacekeepers (Desert)", "UN Peacekeepers (Woodland)"};
-		default = 0;
+		default = 7;
 	};
 	class Template_OPFOR {
 		title = "OPFOR Faction";
 		values[] = {0,1,2,3,4,5};
 		texts[] = {"CSAT", "CSAT (Tanoa)", "ChDKZ Insurgents", "Russian Armed Forces (Desert)", "Russian Armed Forces (Woodland)", "Insurrectionists"};
-		default = 5;
+		default = 4;
 	};
 	class Template_CIV {
 		title = "Civilian Faction";
 		values[] = {0,1};
 		texts[] = {"Vanilla", "UEG"};
-		default = 1;
+		default = 0;
 	};
 	class Unitcap {
 		title = $STR_PARAMS_UNITCAP;

@@ -1,4 +1,4 @@
-// This give you all the "ACE" items you'd likely want
+// This give you all the ACE items you'd likely want
 // when starting new templates.
 //
 // Not meant to be used standalone.

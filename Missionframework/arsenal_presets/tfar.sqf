@@ -1,4 +1,4 @@
-// This give you all the "TFAR" backpacks you'd likely want
+// This give you all the TFAR backpacks you'd likely want
 // when starting new templates.
 //
 // Not meant to be used standalone.
@@ -41,7 +41,6 @@ GRLIB_arsenal_backpacks = [
 	"tf_rt1523g_green",
 	"tf_rt1523g_rhs",
 	"tf_rt1523g_sage"
-	"B_Parachute",
 ];
 
 	
