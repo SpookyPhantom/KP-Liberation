@@ -81,5 +81,10 @@
     ],
     "todo-tree.general.statusBar": "tags",
     "todo-tree.tree.showCountsInTree": true,
-    "todo-tree.tree.flat": true
+    "todo-tree.tree.flat": true,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#13350F",
+        "titleBar.activeBackground": "#1B4A15",
+        "titleBar.activeForeground": "#F6FCF5"
+    }
 }
