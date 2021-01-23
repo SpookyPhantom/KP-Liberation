@@ -30,7 +30,6 @@ gulp <task_name>
 | build       | assembles missionfolder and sets config values |
 | pbo         | packs missionfolders into PBOs                 |
 | zip         | creates release ZIPs                           |
-| workshop    | uploads built PBOs to Steam workshop           |
 | __default__ | runs _build_, _pbo_ and _zip_                  |
 
 Build files will be outputted to `build/` dir.
