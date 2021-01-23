@@ -3,7 +3,7 @@ class Params {
         title = $STR_PARAMS_LOADSAVEPARAMS;
         values[] = {0, 1, 2};
         texts[] = {$STR_PARAMS_LOADSAVEPARAMS_SAVE, $STR_PARAMS_LOADSAVEPARAMS_LOAD, $STR_PARAMS_LOADSAVEPARAMS_SELECTED};
-        default = 1; // If you want to set mission parameters via server.cfg or this file, then set this value to 2
+        default = 2; // If you want to set mission parameters via server.cfg or this file, then set this value to 2
     };
     class Spacer0 {
         title = "";
@@ -27,7 +27,7 @@ class Params {
         title = $STR_PARAMS_DIFFICULTY;
         values[] = {0, 1, 2, 3, 4, 5, 6, 7};
         texts[] = {$STR_PARAMS_DIFFICULTY1, $STR_PARAMS_DIFFICULTY2, $STR_PARAMS_DIFFICULTY3, $STR_PARAMS_DIFFICULTY4, $STR_PARAMS_DIFFICULTY5, $STR_PARAMS_DIFFICULTY6, $STR_PARAMS_DIFFICULTY7, $STR_PARAMS_DIFFICULTY8};
-        default = 3;
+        default = 2;
     };
     class Aggressivity {
         title = $STR_AGGRESSIVITY_PARAM;
@@ -87,7 +87,7 @@ class Params {
         title = $STR_PARAMS_DAYDURATION;
         values[] = {8, 6, 4, 3, 2, 1};
         texts[] = {"3","4","6","8","12","24"};
-        default = 4;
+        default = 1;
     };
     class ShorterNights {
         title = $STR_SHORTER_NIGHTS_PARAM;
@@ -111,7 +111,7 @@ class Params {
         title = $STR_PARAMS_RESOURCESMULTIPLIER;
         values[] = {0, 1, 2, 3, 4, 5, 6, 7};
         texts[] = {"x0.25", "x0.5", "x0.75", "x1", "x1.25","x1.5","x2","x3"};
-        default = 3;
+        default = 7;
     };
     class ArsenalType {
         title = $STR_PARAMS_ARSENAL;
@@ -243,7 +243,7 @@ class Params {
         title = $STR_PARAM_RESPAWN_COOLDOWN;
         values[] = {0, 300, 600, 900, 1200, 1800, 3600};
         texts[] = {$STR_PARAMS_DISABLED, 5, 10, 15, 20, 30, 60};
-        default = 600;
+        default = 0;
     };
     class MobileArsenal {
         title = $STR_PARAMS_MOBILEARSENAL;
@@ -255,7 +255,7 @@ class Params {
         title = $STR_PARAMS_ATTACKEDSECTORRESPAWN;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 0;
+        default = 1;
     };
     class AiLogistics {
         title = $STR_PARAMS_AILOGISTICS;
@@ -285,13 +285,13 @@ class Params {
         title = $STR_PARAM_ALLOW_ENEMIES_IN_IMMOBILE;
         values[] = {0, 25, 50, 75, 100};
         text[] = {$STR_PARAMS_DISABLED, "25%", "50%", "75%", "100%"};
-        default = 50;
+        default = 75;
     };
     class DelayDespawnMax {
         title = $STR_PARAM_DELAY_DESPAWN_MAX;
         values[] = {0, 5, 10, 15, 20, 25, 30};
         texts[] = {$STR_PARAMS_DISABLED, "5", "10", "15", "20", "25", "30"};
-        default = 5;
+        default = 10;
     };
     class CommanderZeus {
         title = $STR_PARAM_COMMANDERZEUS;
