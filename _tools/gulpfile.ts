@@ -74,19 +74,22 @@ for (let preset of presets) {
             // https://regex101.com/r/TSfish/2
             const versionRegex = /(<Key ID="STR_MISSION_VERSION">\s*<Original>)(?<version>.+)(<\/Original>)/;
             const nameRegex = /(<Key ID="STR_MISSION_TITLE">\s*<Original>)(?<name>.+)(<\/Original>)/;
+            const factionsRegex = /.*liberation_(?<blufor>.*)_v_(?<opfor>.*)/;
 
             return gulp.src(mission.getFrameworkPath().concat('/stringtable.xml'))
                 .pipe(gulpModify((content: string) => {
                     let version: string = content.match(versionRegex)['groups']['version'];
 
-                    // append commit hash and mark as dev version in PRs
-                    if ('pull_request' === process.env.GITHUB_EVENT_NAME) {
-                        content = content.replace(versionRegex, `$1${version}-${process.env.GITHUB_SHA}$3`);
-                        version = version.concat('-dev');
-                    }
+                    // Append commit hash
+                    version = version.concat(`-${process.env.GITHUB_SHA.slice(0,8)}`);
+                    content = content.replace(versionRegex, `$1${version}$3`);
+
+                    // Extract factions from missionName
+                    let blufor: string = preset.missionName.match(factionsRegex)['groups']['blufor'].toUpperCase();
+                    let opfor: string = preset.missionName.match(factionsRegex)['groups']['opfor'].toUpperCase();
 
                     // add version number and map name to mission name
-                    return content.replace(nameRegex, `$1CTI 34 KP Liberation ${preset.mapDisplay || preset.map} ${version}$3`);
+                    return content.replace(nameRegex, `$1CTI 34 TPO Liberation ${version} (${blufor} v ${opfor})`);
                 }))
                 .pipe(gulp.dest(mission.getOutputDir(), { overwrite: true, }))
             ;
