@@ -135,7 +135,9 @@ KP_liberation_preset_blufor = 0;
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland)
 21 = RHS GREF CDKZ
-22 = RHS AFRF (VDV Desert) */
+22 = RHS AFRF (VDV Desert)
+23 = NATO (Woodland)
+24 = NATO (Pacific) */
 KP_liberation_preset_opfor = 0;
 
 /* Resistance preset:

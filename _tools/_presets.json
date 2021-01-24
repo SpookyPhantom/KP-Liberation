@@ -22,7 +22,7 @@
             "KP_liberation_preset_opfor": 7,
             "KP_liberation_preset_resistance": 0,
             "KP_liberation_preset_civilians": 0,
-            "KP_liberation_arsenal": 6
+            "KP_liberation_arsenal": 13
         }
     },
     {
@@ -73,7 +73,7 @@
         "variables": {
 
             "KP_liberation_preset_blufor": 30,
-            "KP_liberation_preset_opfor": 7,
+            "KP_liberation_preset_opfor": 23,
             "KP_liberation_preset_resistance": 0,
             "KP_liberation_preset_civilians": 0,
             "KP_liberation_arsenal": 16
@@ -158,6 +158,19 @@
             "KP_liberation_preset_resistance": 1,
             "KP_liberation_preset_civilians": 1,
             "KP_liberation_arsenal": 11
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.Tanoa",
+        "missionName": "tpo_liberation_csat_v_nato",
+        "map": "Tanoa",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor": 14,
+            "KP_liberation_preset_opfor": 24,
+            "KP_liberation_preset_resistance": 1,
+            "KP_liberation_preset_civilians": 1,
+            "KP_liberation_arsenal": 14
         }
     },
     {
