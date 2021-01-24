@@ -65,6 +65,21 @@
         }
     },
     {
+        "sourceFolder": "kp_liberation.Enoch",
+        "missionName": "tpo_liberation_ldf_v_nato",
+        "map": "Enoch",
+        "mapDisplay": "Livonia",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+
+            "KP_liberation_preset_blufor": 30,
+            "KP_liberation_preset_opfor": 7,
+            "KP_liberation_preset_resistance": 0,
+            "KP_liberation_preset_civilians": 0,
+            "KP_liberation_arsenal": 16
+        }
+    },
+    {
         "sourceFolder": "kp_liberation.gm_weferlingen_summer",
         "missionName": "tpo_liberation_gw_v_ge",
         "map": "gm_weferlingen_summer",
