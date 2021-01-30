@@ -80,8 +80,15 @@ for (let preset of presets) {
                 .pipe(gulpModify((content: string) => {
                     let version: string = content.match(versionRegex)['groups']['version'];
 
-                    // Append commit hash
-                    version = version.concat(`-${process.env.GITHUB_SHA.slice(0,8)}`);
+                    // Append commit hash for CD build
+                    if (process.env.GITHUB_SHA === undefined)
+                    {
+                        version = version.concat(`-dev`);
+                    }
+                    else
+                    {
+                        version = version.concat(`-${process.env.GITHUB_SHA.slice(0,8)}`);
+                    }
                     content = content.replace(versionRegex, `$1${version}$3`);
 
                     // Extract factions from missionName
