@@ -3,6 +3,10 @@ missionNamespace setVariable ["SA_MAX_TOWED_CARGO", 99];
 missionNamespace setVariable ["SA_TOW_LOCKED_VEHICLES_ENABLED", true];
 execVM "scripts\server\thirdparty\fn_advancedTowingInit.sqf";
 
+// Advanced Sling Loading
+missionNamespace setVariable ["ASL_LOCKED_VEHICLES_ENABLED", true];
+execVM "scripts\server\thirdparty\fn_advancedSlingLoadingInit.sqf";
+
 // AI
 add_civ_waypoints = compileFinal preprocessFileLineNumbers "scripts\server\ai\add_civ_waypoints.sqf";
 add_defense_waypoints = compileFinal preprocessFileLineNumbers "scripts\server\ai\add_defense_waypoints.sqf";
