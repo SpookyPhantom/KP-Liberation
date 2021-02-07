@@ -950,7 +950,7 @@ class Mission
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="LeadTrack01_F";
+				effectMusic="MainTheme_F_Tank";
 			};
 			id=304;
 			type="EmptyDetector";
@@ -968,7 +968,7 @@ class Mission
 				timeout[]={0.2,0.2,0.2};
 				interuptable=1;
 				activationBy="WEST";
-				effectMusic="EventTrack01_F_Curator";
+				effectMusic="EventTrack02_F_Orange";
 			};
 			id=305;
 			type="EmptyDetector";
@@ -983,7 +983,7 @@ class Mission
 				condition="GRLIB_endgame == 1";
 				timeout[]={17,17,17};
 				interuptable=1;
-				effectMusic="LeadTrack03_F";
+				effectMusic="LeadTrack05_F_Tank";
 			};
 			id=306;
 			type="EmptyDetector";
