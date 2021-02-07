@@ -96,7 +96,7 @@ for (let preset of presets) {
                     let opfor: string = preset.missionName.match(factionsRegex)['groups']['opfor'].toUpperCase();
 
                     // add version number and map name to mission name
-                    return content.replace(nameRegex, `$1CTI 34 TPO Liberation ${version} (${blufor} v ${opfor})`);
+                    return content.replace(nameRegex, `$1CTI 34 TPO Liberation ${version} (${blufor} v ${opfor})$3`);
                 }))
                 .pipe(gulp.dest(mission.getOutputDir(), { overwrite: true, }))
             ;
