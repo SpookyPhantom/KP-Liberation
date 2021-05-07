@@ -39,7 +39,8 @@ switch (KP_liberation_preset_blufor) do {
     case 28: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\sfp_wdl.sqf";};
     case 29: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\sfp_des.sqf";};
     case 30: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\enoch.sqf";};
-    case 31: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\cdf.sqf";};
+    case 31: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\vn.sqf";};
+    case 32: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\cdf.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
 };
 
@@ -64,10 +65,11 @@ switch (KP_liberation_preset_opfor) do {
     case 18: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\CUP_CDF.sqf";};
     case 19: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\CUP_BAF_Desert.sqf";};
     case 20: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\CUP_BAF_Woodland.sqf";};
-    case 21: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\cdkz.sqf";};
-    case 22: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\rhs_afrf_vdv_des.sqf";};
-    case 23: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\nato_woodland.sqf";};
-    case 24: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\nato_pacific.sqf";};
+    case 21: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\vn.sqf";};
+    case 22: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\cdkz.sqf";};
+    case 23: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\rhs_afrf_vdv_des.sqf";};
+    case 24: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\nato_woodland.sqf";};
+    case 25: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\nato_pacific.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
 
@@ -80,6 +82,7 @@ switch (KP_liberation_preset_resistance) do {
     case  6: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\unsung.sqf";};
     case  7: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\CUP_TakiLocals.sqf";};
     case  8: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\CUP_NAPA.sqf";};
+    case  9: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\vn.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
@@ -91,6 +94,7 @@ switch (KP_liberation_preset_civilians) do {
     case  5: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\unsung.sqf";};
     case  6: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\CUP_TakiCivs.sqf";};
     case  7: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\CUP_ChernoCivs.sqf";};
+    case  8: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\vn.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\civilians\vanilla.sqf";};
 };
 
@@ -164,7 +168,31 @@ GRLIB_ignore_colisions_when_building = [
     "B_Mortar_01_F",                                                    // Mk6 Mortar
     "ACE_friesAnchorBar",                                               // ACE FRIES
     "ACE_friesGantryReverse",                                           // ACE FRIES
-    "ACE_friesGantry"                                                   // ACE FRIES
+    "ACE_friesGantry",                                                  // ACE FRIES
+    "vn_b_army_static_m60_high",                                        // M60 (High)
+    "vn_b_army_static_m60_low",                                         // M60 (Low)
+    "vn_b_army_static_m1919a4_high",                                    // M-1919A4 .30cal (High)
+    "vn_b_army_static_m1919a4_low",                                     // M-1919A4 .30cal (Low)
+    "vn_b_army_static_m1919a6",                                         // M-1919A6 .30cal
+    "vn_b_army_static_m2_high",                                         // M-2HB .50cal (High)
+    "vn_b_army_static_m2_low",                                          // M-2HB .50cal (Low)
+    "vn_b_army_static_mortar_m2",                                       // M2 60mm Mortar
+    "vn_b_army_static_mortar_m29",                                      // M29 81mm Mortar
+    "Land_vn_b_foxhole_01",
+    "Land_vn_b_gunpit_01",
+    "Land_vn_b_mortarpit_01",
+    "Land_vn_bagbunker_01_small_green_f",
+    "Land_vn_bagbunker_small_f",
+    "vn_flag_101stab",
+    "vn_flag_1stcav",
+    "vn_flag_25thid",
+    "vn_flag_arvn",
+    "vn_flag_aus",
+    "vn_flag_nz",
+    "vn_flag_sog",
+    "vn_flag_usa",
+    "vn_flag_usarmy",
+    "vn_flag_usmc"
 ];
 
 /*
