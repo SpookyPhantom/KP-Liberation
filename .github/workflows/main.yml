@@ -2,9 +2,7 @@ name: CI
 
 on:
   push:
-    branches:
-      - master
-  pull_request: ~
+    branches: [ master ]
 
 jobs:
   artifacts:
@@ -23,8 +21,10 @@ jobs:
         working-directory: _tools
         run: npx gulp
 
-      - uses: actions/upload-artifact@master
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          name: PBO-Files
-          path: _tools/build/pbo
-
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          draft: false
+          prerelease: false
+          automatic_release_tag: "latest"
+          files: _tools/build/*.zip
