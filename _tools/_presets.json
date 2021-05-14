@@ -26,6 +26,20 @@
         }
     },
     {
+        "sourceFolder": "kp_liberation.Cam_Lao_Nam",
+        "missionName": "tpo_liberation_usa_v_nva",
+        "map": "Cam_Lao_Nam",
+        "mapDisplay": "Cam Lao Nam",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor": 31,
+            "KP_liberation_preset_opfor": 21,
+            "KP_liberation_preset_resistance": 9,
+            "KP_liberation_preset_civilians": 8,
+            "KP_liberation_arsenal": 17
+        }
+    },
+    {
         "sourceFolder": "kp_liberation.Chernarus",
         "missionName": "tpo_liberation_usaf_v_afrf",
         "map": "Chernarus",
@@ -199,20 +213,6 @@
             "KP_liberation_preset_resistance": 5,
             "KP_liberation_preset_civilians": 4,
             "KP_liberation_arsenal": 5
-        }
-    },
-    {
-        "sourceFolder": "kp_liberation.Cam_Lao_Nam",
-        "missionName": "tpo_liberation_usa_v_nva",
-        "map": "Cam_Lao_Nam",
-        "mapDisplay": "Cam Lao Nam",
-        "configFile": "kp_liberation_config.sqf",
-        "variables": {
-            "KP_liberation_preset_blufor": 31,
-            "KP_liberation_preset_opfor": 21,
-            "KP_liberation_preset_resistance": 9,
-            "KP_liberation_preset_civilians": 8,
-            "KP_liberation_arsenal": 17
         }
     }
 ]

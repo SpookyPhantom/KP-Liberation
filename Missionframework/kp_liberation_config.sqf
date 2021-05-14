@@ -51,7 +51,9 @@ KP_liberation_medical_vehicles = [
     "uns_ch47a_medevac",
     "uns_H13_medevac_CAV",
     "uns_M577_amb",
-    "uns_uh1D_med"
+    "uns_uh1D_med",
+    "vn_b_air_uh1d_01_01",
+    "vn_b_wheeled_m54_repair_airport"
 ];
 
 // Building classnames which also function as ACE medical facilities.
@@ -60,6 +62,15 @@ KP_liberation_medical_facilities = [
     "Land_Medevac_HQ_V1_F",
     "LAND_uns_army_med",
     "LAND_uns_tent3mash",
+    "Land_vn_tent_mash_01_01",
+    "Land_vn_tent_mash_01_02",
+    "Land_vn_tent_mash_01_03",
+    "Land_vn_tent_mash_01_04",
+    "Land_vn_tent_mash_01",
+    "Land_vn_tent_mash_02_01",
+    "Land_vn_tent_mash_02_02",
+    "Land_vn_tent_mash_02_03",
+    "Land_vn_tent_mash_02_04",
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
@@ -264,7 +275,7 @@ KP_liberation_resistance_ambush_chance = 25;                            // Chanc
 // When playing on this map, it'll create a clearance (remove terrain objects) in a 15m radius around the battlegroup/reinforcements spawnpoint.
 KP_liberation_battlegroup_clearance = [
     "song_bin_tanh",
-    "cam_lao_nam"
+    "Cam_Lao_Nam"
 ];
 
 /* Slot independent commander action access.

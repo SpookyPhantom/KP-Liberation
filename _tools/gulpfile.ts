@@ -72,8 +72,8 @@ for (let preset of presets) {
         function stringTableReplace () {
             // I know, replacing XML with regex... :|
             // https://regex101.com/r/TSfish/2
-            const versionRegex = /(<Key ID="STR_MISSION_VERSION">\s*<Original>)(?<version>.+)(<\/Original>)/;
-            const nameRegex = /(<Key ID="STR_MISSION_TITLE">\s*<Original>)(?<name>.+)(<\/Original>)/;
+            const versionRegex = /(<Key ID="STR_MISSION_VERSION">\s*<English>)(?<version>.+)(<\/English>)/;
+            const nameRegex = /(<Key ID="STR_MISSION_TITLE">\s*<English>)(?<name>.+)(<\/English>)/;
             const factionsRegex = /.*liberation_(?<blufor>.*)_v_(?<opfor>.*)/;
 
             return gulp.src(mission.getFrameworkPath().concat('/stringtable.xml'))
