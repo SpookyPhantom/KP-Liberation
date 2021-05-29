@@ -50,7 +50,7 @@ GRLIB_arsenal_items = [
     "ToolKit",                                                      // Toolkit
 
     // Faction Specific Items
-    "I_UavTerminal",                                                // UAV Terminal [AAF]
+    "B_UavTerminal",                                                // UAV Terminal [NATO]
     "NVGoggles_INDEP",                                              // NV Goggles (Green)
     "Laserdesignator_03",                                           // Laser Designator (Olive)
 

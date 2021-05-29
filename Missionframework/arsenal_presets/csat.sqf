@@ -122,7 +122,7 @@ GRLIB_arsenal_items = [
     "O_NVGoggles_ghex_F",                                           // Compact NVG (Green Hex)
     "O_NVGoggles_hex_F",                                            // Compact NVG (Hex)
     "O_NVGoggles_urb_F",                                            // Compact NVG (Urban)
-    "O_UavTerminal",                                                // UAV Terminal [CSAT]
+    "B_UavTerminal",                                                // UAV Terminal [NATO]
     "Rangefinder",                                                  // Rangefinder
     "ToolKit",                                                      // Toolkit
 
