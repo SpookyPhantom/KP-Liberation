@@ -144,6 +144,12 @@ GRLIB_arsenal_items = [
     "U_O_V_Soldier_Viper_F",                                        // Special Purpose Suit (Green Hex)
     "U_O_V_Soldier_Viper_hex_F",                                    // Special Purpose Suit (Hex)
     "U_O_Wetsuit",                                                  // Wetsuit [CSAT]
+    "U_O_R_Gorka_01_black_F",
+    "U_O_R_Gorka_01_F",
+    "U_O_R_Gorka_01_brown_F",
+    "U_O_R_Gorka_01_camo_F",
+    "U_O_ParadeUniform_01_CSAT_F",
+    "U_O_ParadeUniform_01_CSAT_decorated_F",
 
     // Headgear
     "H_Bandanna_cbr",                                               // Bandana (Coyote)
@@ -174,6 +180,16 @@ GRLIB_arsenal_items = [
     "H_ShemagOpen_tan",                                             // Shemag (Tan)
     "H_Tank_black_F",                                               // Crew Helmet (Soft) [CSAT]
     "H_WirelessEarpiece_F",                                         // Wireless Earpiece
+    "H_HelmetAggressor_F",
+    "H_HelmetAggressor_cover_F",
+    "H_HelmetAggressor_cover_taiga_F",
+    "H_Booniehat_taiga",
+    "H_Booniehat_mgrn",
+    "H_Booniehat_khk_hs",
+    "H_ParadeDressCap_01_CSAT_F",
+    "H_HeadBandage_clean_F",
+    "H_HeadBandage_stained_F",
+    "H_HeadBandage_bloody_F",
 
     // Facegear
     "G_AirPurifyingRespirator_02_black_F",                          // APR (Black) [CSAT]

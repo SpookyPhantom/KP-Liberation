@@ -23,11 +23,11 @@ GRLIB_arsenal_weapons = [
     "srifle_DMR_05_blk_F",                                          // Cyrus 9.3 mm (Black)
     "MMG_01_hex_F",                                                 // Navid 9.3 mm (Hex)
     "arifle_ARX_hex_F",                                             // Type 115 6.5 mm (Hex)
-       
+
     // Handgun
     "hgun_Rook40_F",                                                // Rook-40 9 mm
     "hgun_Pistol_heavy_02_F",                                       // Zubr .45 ACP
-    
+
     // Launcher
     "launch_RPG32_F",                                               // RPG-42 Alamut
     "launch_O_Titan_F",                                             // Titan MPRL (Hex)
@@ -53,7 +53,7 @@ GRLIB_arsenal_items = [
     "MineDetector",                                                 // Mine Detector
     "Rangefinder",                                                  // Rangefinder
     "ToolKit",                                                      // Toolkit
-    
+
     // Faction Specific Items
     "O_UavTerminal",                                                // UAV Terminal [CSAT]
     "Laserdesignator_02",                                           // Laser Designator (Hex)
@@ -71,6 +71,12 @@ GRLIB_arsenal_items = [
     "U_O_FullGhillie_ard",                                          // Full Ghillie (Arid) [CSAT]
     "U_O_FullGhillie_sard",                                         // Full Ghillie (Semi-Arid) [CSAT]
     "U_O_FullGhillie_lsh",                                          // Full Ghillie (Lush) [CSAT]
+    "U_O_R_Gorka_01_black_F",
+    "U_O_R_Gorka_01_F",
+    "U_O_R_Gorka_01_brown_F",
+    "U_O_R_Gorka_01_camo_F",
+    "U_O_ParadeUniform_01_CSAT_F",
+    "U_O_ParadeUniform_01_CSAT_decorated_F",
 
     // Headgear
     "H_HelmetSpecO_blk",                                            // Assassin Helmet (Black)
@@ -89,6 +95,16 @@ GRLIB_arsenal_items = [
     "H_Beret_CSAT_01_F",                                            // Beret (Red) [CSAT]
     "H_HelmetO_ViperSP_hex_F",                                      // Special Purpose Helmet (Hex)
     "H_Tank_black_F",                                               // Crew Helmet (Soft) [CSAT]
+    "H_HelmetAggressor_F",
+    "H_HelmetAggressor_cover_F",
+    "H_HelmetAggressor_cover_taiga_F",
+    "H_Booniehat_taiga",
+    "H_Booniehat_mgrn",
+    "H_Booniehat_khk_hs",
+    "H_ParadeDressCap_01_CSAT_F",
+    "H_HeadBandage_clean_F",
+    "H_HeadBandage_stained_F",
+    "H_HeadBandage_bloody_F",
 
     // Facegear
     "G_Aviator",                                                    // Aviator Glasses
@@ -112,7 +128,7 @@ GRLIB_arsenal_items = [
     "G_Shades_Red",                                                 // Shades (Red)
     "G_AirPurifyingRespirator_02_black_F",                          // APR (Black) [CSAT]
     "G_AirPurifyingRespirator_02_sand_F",                           // APR (Sand) [CSAT]
-    
+
     // Vests
     "V_Chestrig_khk",                                               // Chest Rig (Khaki)
     "V_HarnessOGL_brn",                                             // LBV Grenadier Harness
@@ -127,7 +143,7 @@ GRLIB_arsenal_items = [
     "V_Safety_orange_F",                                            // Safety Vest (Orange)
     "V_Safety_yellow_F",                                            // Safety Vest (Yellow)
     "V_DeckCrew_green_F",                                           // Deck Crew Vest (Green)
-    
+
     // Items
     "acc_pointer_IR",                                               // IR Laser Pointer
     "acc_flashlight",                                               // Flashlight

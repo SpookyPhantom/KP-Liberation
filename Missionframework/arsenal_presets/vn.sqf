@@ -527,6 +527,9 @@ GRLIB_arsenal_items = [
     "vn_s_pm",
     "vn_s_sten",
     "vn_type56_v_03",
+    "H_HeadBandage_clean_F",
+    "H_HeadBandage_stained_F",
+    "H_HeadBandage_bloody_F",
 
     // ACE Items
     "ACE_acc_pointer_green",                                        // Laser Pointer (green)

@@ -30,11 +30,11 @@ GRLIB_arsenal_weapons = [
     "arifle_SPAR_02_khk_F",                                         // SPAR-16S 5.56 mm (Khaki)
     "arifle_SPAR_03_blk_F",                                         // SPAR-17 7.62 mm (Black)
     "arifle_SPAR_03_khk_F",                                         // SPAR-17 7.62 mm (Khaki)
-       
+
     // Handgun
     "hgun_P07_khk_F",                                               // P07 9 mm (Khaki)
     "hgun_Pistol_heavy_01_F",                                       // 4-five .45 ACP
-    
+
     // Launcher
     "launch_NLAW_F",                                                // PCML
     "launch_B_Titan_tna_F",                                         // Titan MPRL (Tropic)
@@ -60,7 +60,7 @@ GRLIB_arsenal_items = [
     "MineDetector",                                                 // Mine Detector
     "Rangefinder",                                                  // Rangefinder
     "ToolKit",                                                      // Toolkit
-    
+
     // Faction Specific Items
     "B_UavTerminal",                                                // UAV Terminal [NATO]
     "Laserdesignator_01_khk_F",                                     // Laser Designator (Khaki)
@@ -80,6 +80,8 @@ GRLIB_arsenal_items = [
     "U_B_CTRG_Soldier_2_F",                                         // CTRG Stealth Uniform (Tee)
     "U_B_CTRG_Soldier_3_F",                                         // CTRG Stealth Uniform (Rolled-up)
     "U_B_CBRN_Suit_01_Tropic_F",                                    // CBRN Suit (Tropic) [NATO]
+    "U_B_ParadeUniform_01_US_F",
+    "U_B_ParadeUniform_01_US_decorated_F",
 
     // Headgear
     "H_Watchcap_camo",                                              // Beanie (Green)
@@ -95,6 +97,10 @@ GRLIB_arsenal_items = [
     "H_HelmetB_Light_tna_F",                                        // Light Combat Helmet (Tropic)
     "H_MilCap_tna_F",                                               // Military Cap (Tropic)
     "H_HelmetB_TI_tna_F",                                           // Stealth Combat Helmet
+    "H_ParadeDressCap_01_US_F",
+    "H_HeadBandage_clean_F",
+    "H_HeadBandage_stained_F",
+    "H_HeadBandage_bloody_F",
 
     // Facegear
     "G_Aviator",                                                    // Aviator Glasses
@@ -114,7 +120,7 @@ GRLIB_arsenal_items = [
     "G_Combat_Goggles_tna_F",                                       // Combat Goggles (Green)
     "G_Balaclava_TI_tna_F",                                         // Stealth Balaclava (Green)
     "G_Balaclava_TI_G_tna_F",                                       // Stealth Balaclava (Green, Goggles)
-    
+
     // Vests
     "V_PlateCarrierGL_tna_F",                                       // Carrier GL Rig (Tropic)
     "V_PlateCarrier1_tna_F",                                        // Carrier Lite (Tropic)
@@ -131,7 +137,7 @@ GRLIB_arsenal_items = [
     "V_Safety_orange_F",                                            // Safety Vest (Orange)
     "V_Safety_yellow_F",                                            // Safety Vest (Yellow)
     "V_DeckCrew_yellow_F",                                          // Deck Crew Vest (Yellow)
-    
+
     // Items
     "acc_pointer_IR",                                               // IR Laser Pointer
     "acc_flashlight",                                               // Flashlight
@@ -155,9 +161,9 @@ GRLIB_arsenal_items = [
     "bipod_01_f_blk",                                               // Bipod (Black) [NATO]
     "bipod_01_F_khk",                                               // Bipod (Khaki) [NATO]
     "muzzle_snds_H",                                                // Sound Suppressor (6.5 mm)
-    "muzzle_snds_H_khk_F",                                          // Sound Suppressor (6.5 mm, Khaki)	
+    "muzzle_snds_H_khk_F",                                          // Sound Suppressor (6.5 mm, Khaki)
     "muzzle_snds_338_black",                                        // Sound Suppressor (.338, Black)
-    "muzzle_snds_338_green",                                        // Sound Suppressor (.338, Green)	
+    "muzzle_snds_338_green",                                        // Sound Suppressor (.338, Green)
     "muzzle_snds_b",                                                // Sound Suppressor (7.62 mm)
     "muzzle_snds_b_khk_f",                                          // Sound Suppressor (7.62 mm, Khaki)
     "muzzle_snds_m",                                                // Sound Suppressor (5.56 mm)
@@ -165,7 +171,7 @@ GRLIB_arsenal_items = [
     "optic_nvs",                                                    // NVS
     "optic_tws",                                                    // TWS
     "optic_tws_mg",                                                 // TWS MG
- 
+
     // ACE Items
     "ACE_acc_pointer_green",                                        // Laser Pointer (green)
     "ACE_adenosine",                                                // Adenosine autoinjector

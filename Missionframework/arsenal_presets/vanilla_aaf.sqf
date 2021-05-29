@@ -19,15 +19,15 @@ GRLIB_arsenal_weapons = [
     "srifle_EBR_F",                                                 // Mk18 ABR 7.62 mm
     "arifle_SDAR_F",                                                // SDAR 5.56 mm
     "LMG_Mk200_F",                                                  // Mk200 6.5 mm
-    
+
     // Handgun
     "hgun_ACPC2_F",                                                 // ACP-C2 .45 ACP
-    
+
     // Launcher
     "launch_I_Titan_F",                                             // Titan MPRL (Digital)
     "launch_I_Titan_short_F",                                       // Titan MPRL Compact (Olive)
     "launch_NLAW_F",                                                // PCML
-    "launch_MRAWS_olive_rail_F"                                     // MAAWS Mk4 Mod 0 (Olive)	
+    "launch_MRAWS_olive_rail_F"                                     // MAAWS Mk4 Mod 0 (Olive)
 ];
 
 GRLIB_arsenal_magazines = [
@@ -48,11 +48,11 @@ GRLIB_arsenal_items = [
     "MineDetector",                                                 // Mine Detector
     "Rangefinder",                                                  // Rangefinder
     "ToolKit",                                                      // Toolkit
-    
+
     // Faction Specific Items
     "I_UavTerminal",                                                // UAV Terminal [AAF]
     "NVGoggles_INDEP",                                              // NV Goggles (Green)
-    "Laserdesignator_03",                                           // Laser Designator (Olive)	
+    "Laserdesignator_03",                                           // Laser Designator (Olive)
 
     // Uniforms
     "U_I_CombatUniform",                                            // Combat Fatigues [AAF]
@@ -67,7 +67,9 @@ GRLIB_arsenal_items = [
     "U_I_Wetsuit",                                                  // Wetsuit [AAF]
     "U_Tank_green_F",                                               // Tanker Coveralls [AAF]
     "U_I_CBRN_Suit_01_AAF_F",                                       // CBRN Suit [AAF]
-    
+    "U_I_ParadeUniform_01_AAF_F",
+    "U_I_ParadeUniform_01_AAF_decorated_F",
+
     // Headgear
     "H_HelmetIA",                                                   // Modular Helmet
     "H_Beret_blk",                                                  // Beret (Black)
@@ -78,6 +80,10 @@ GRLIB_arsenal_items = [
     "H_PilotHelmetHeli_I",                                          // Heli Pilot Helmet [AAF]
     "H_CrewHelmetHeli_I",                                           // Heli Crew Helmet [AAF]
     "H_PilotHelmetFighter_I",                                       // Pilot Helmet [AAF]
+    "H_ParadeDressCap_01_AAF_F",
+    "H_HeadBandage_clean_F",
+    "H_HeadBandage_stained_F",
+    "H_HeadBandage_bloody_F",
 
     // Facegear
     "G_Aviator",                                                    // Aviator Glasses
@@ -105,7 +111,7 @@ GRLIB_arsenal_items = [
     "V_Safety_orange_F",                                            // Safety Vest (Orange)
     "V_Safety_yellow_F",                                            // Safety Vest (Yellow)
     "V_DeckCrew_red_F",                                             // Deck Crew Vest (Red)
-    
+
     // Items
     "acc_pointer_IR",                                               // IR Laser Pointer
     "acc_flashlight",                                               // Flashlight
@@ -125,7 +131,7 @@ GRLIB_arsenal_items = [
     "optic_nvs",                                                    // NVS
     "optic_tws",                                                    // TWS
     "optic_tws_mg",                                                 // TWS MG
-    
+
     // ACE Items
     "ACE_acc_pointer_green",                                        // Laser Pointer (green)
     "ACE_adenosine",                                                // Adenosine autoinjector

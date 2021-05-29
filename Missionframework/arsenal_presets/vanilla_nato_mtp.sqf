@@ -22,11 +22,11 @@ GRLIB_arsenal_weapons = [
     "MMG_02_sand_F",                                                // SPMG .338 (Sand)
 	"srifle_DMR_02_sniper_F",                                       // MAR-10 .338 (Sand)
     "srifle_DMR_03_tan_F",                                          // Mk-I EMR 7.62 mm (Sand)
-    
+
     // Handgun
     "hgun_P07_F",                                                   // P07 9 mm
     "hgun_Pistol_heavy_01_F",                                       // 4-five .45 ACP
-    
+
     // Launcher
     "launch_B_Titan_F",                                             // Titan MPRL (Sand)
     "launch_B_Titan_short_F",                                       // Titan MPRL Compact (Sand)
@@ -52,7 +52,7 @@ GRLIB_arsenal_items = [
     "MineDetector",                                                 // Mine Detector
     "Rangefinder",                                                  // Rangefinder
     "ToolKit",                                                      // Toolkit
-    
+
     // Faction Specific Items
     "B_UavTerminal",                                                // UAV Terminal [NATO]
     "Laserdesignator",                                              // Laser Designator (Sand)
@@ -70,6 +70,8 @@ GRLIB_arsenal_items = [
     "U_B_FullGhillie_sard",                                         // Full Ghillie (Semi-Arid) [NATO]
     "U_B_FullGhillie_lsh",                                          // Full Ghillie (Lush) [NATO]
 	"U_B_CBRN_Suit_01_MTP_F",                                       // CBRN Suit (MTP) [NATO]
+    "U_B_ParadeUniform_01_US_F",
+    "U_B_ParadeUniform_01_US_decorated_F",
 
     // Headgear
     "H_Watchcap_camo",                                              // Beanie (Green)
@@ -102,6 +104,10 @@ GRLIB_arsenal_items = [
     "H_HelmetSpecB_paint1",                                         // Enhanced Combat Helmet (Grass)
     "H_HelmetSpecB_sand",                                           // Enhanced Combat Helmet (Sand)
     "H_HelmetSpecB_snakeskin",                                      // Enhanced Combat Helmet (Snakeskin)
+    "H_ParadeDressCap_01_US_F",
+    "H_HeadBandage_clean_F",
+    "H_HeadBandage_stained_F",
+    "H_HeadBandage_bloody_F",
 
     // Facegear
     "G_Aviator",                                                    // Aviator Glasses
@@ -134,7 +140,7 @@ GRLIB_arsenal_items = [
     "V_Safety_orange_F",                                            // Safety Vest (Orange)
     "V_Safety_yellow_F",                                            // Safety Vest (Yellow)
     "V_DeckCrew_yellow_F",                                          // Deck Crew Vest (Yellow)
-    
+
     // Items
     "acc_pointer_IR",                                               // IR Laser Pointer
     "acc_flashlight",                                               // Flashlight
